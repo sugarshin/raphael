@@ -1,6 +1,6 @@
 {
   "name": "raphael",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "main": "raphael.js",
   "ignore": [
     "eve",
@@ -15,5 +15,8 @@
     "raphael.svg.js",
     "raphael.vml.js",
     "reference.js"
-  ]
+  ],
+  "dependencies": {
+    "eve": "git@github.com:sugarshin/eve.git#v0.4.2"
+  }
 }
