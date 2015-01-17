@@ -392,12 +392,14 @@
         define(["eve"], function( eve ) {
             return factory(glob, eve);
         });
+    } else if (typeof module !== 'undefined' && module.exports) {
+        module.exports = factory(glob, glob.eve);
     } else {
         // Browser globals (glob is window)
         // Raphael adds itself to window
         factory(glob, glob.eve);
     }
-}(this, function (window, eve) {
+}(typeof window !== 'undefined' ? window : this, function (window, eve) {
     /*\
      * Raphael
      [ method ]
